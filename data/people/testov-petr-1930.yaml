@@ -5,20 +5,40 @@ names:
   - surname: Тестов
     given: Пётр
     patronymic: Иванович
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 parents:
   - person: testov-ivan-1902
     status: confirmed
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
+  - person: ilina-evdokiya-1905
+    status: confirmed
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
 spouses:
   - person: testova-anna-1932
     status: confirmed
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 events:
   - type: birth
     date: 1930
     place: s-pokrovskoe
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
   - type: death
     date: до 2000
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
+  - type: move
+    date: '1952'
+    place: g-ryazan
+    title: Переехал в Рязань, работа на заводе
+    claims: *ref_0

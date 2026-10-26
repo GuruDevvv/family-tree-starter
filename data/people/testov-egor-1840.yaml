@@ -1,0 +1,17 @@
+id: testov-egor-1840
+sex: M
+living: false
+estate: крестьянин
+names:
+  - surname: Тестов
+    given: Егор
+    claims:
+      - source: src-metric-1902
+        confidence: hypothesis
+events:
+  - type: birth
+    date: около 1840
+    place: s-pokrovskoe
+    claims:
+      - source: src-owner
+        confidence: hypothesis

@@ -7,5 +7,5 @@ hierarchy:
   volost: Покровская волость
   parish: Покровская церковь
 name_now: не существует (урочище)
-coords: { lat: 54.3, lon: 40.1, precision: approx, how: по карте Менде 1850-х }
+coords: { lat: 54.0, lon: 41.1, precision: approx, how: по карте Менде 1850-х }
 archive: garo

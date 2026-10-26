@@ -1,12 +1,38 @@
-- date: 2026-10-24
-  persons: [testov-ivan-1902]
+- date: '2026-10-24'
+  persons:
+    - testov-ivan-1902
   where: ГАРО, метрические книги Покровской церкви
   query: рождения за 1902 год
   result: found
-  sources: [src-metric-1902]
+  sources:
+    - src-metric-1902
   next: ревизская сказка 1858 года по селу — найти семью Семёна
-- date: 2026-10-24
-  persons: [lebedev-nikolay-1929]
+- date: '2026-10-24'
+  persons:
+    - lebedev-nikolay-1929
   where: Память народа
   query: Лебедев Николай 1929
   result: not_found
+- date: '2026-10-25'
+  persons:
+    - lebedev-fedor-1900
+  where: Память народа
+  query: Лебедев Фёдор Иванович 1900
+  result: found
+  sources:
+    - src-pamyat-naroda-lebedev
+  next: 'наградной лист в ЦАМО: место службы'
+- date: '2026-10-25'
+  persons:
+    - volkov-grigoriy-1905
+  where: ОБД «Мемориал»
+  query: Волков Григорий Степанович 1905
+  result: partial
+  next: 'уточнить год у родных: нашлись два тёзки'
+- date: '2026-10-26'
+  persons:
+    - orlov-vasiliy-1898
+  where: Яндекс «Поиск по архивам»
+  query: Орлов + Никольское
+  result: not_found
+  next: метрики Никольского прихода в областном архиве

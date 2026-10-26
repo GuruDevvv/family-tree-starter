@@ -1,0 +1,8 @@
+id: g-moskva
+name_then: г. Москва
+kind: city
+name_now: Москва
+coords:
+  lat: 55.7558
+  lon: 37.6173
+  precision: exact

@@ -1,0 +1,12 @@
+id: d-nikolskoe
+name_then: д. Никольское
+kind: village
+hierarchy:
+  governorate: Вологодская губерния
+  uyezd: Вологодский уезд
+name_now: не существует (урочище)
+coords:
+  lat: 59.75
+  lon: 42.6
+  precision: approx
+  how: по карте Шуберта 1860-х

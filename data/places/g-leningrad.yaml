@@ -1,0 +1,8 @@
+id: g-leningrad
+name_then: г. Ленинград
+kind: city
+name_now: Санкт-Петербург
+coords:
+  lat: 59.9386
+  lon: 30.3141
+  precision: exact

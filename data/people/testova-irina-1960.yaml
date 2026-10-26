@@ -6,15 +6,29 @@ names:
     surname: Лебедева
     given: Ирина
     patronymic: Николаевна
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
   - type: married
     surname: Тестова
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 parents:
   - person: lebedev-nikolay-1929
     status: confirmed
-    claims: [{ source: src-interview-irina, confidence: oral }]
+    claims:
+      - source: src-interview-irina
+        confidence: oral
+  - person: orlova-valentina-1932
+    status: confirmed
+    claims:
+      - source: src-interview-irina
+        confidence: oral
 events:
   - type: birth
     date: около 1960
-    claims: [{ source: src-owner, confidence: oral }]
+    place: g-ryazan
+    claims:
+      - source: src-owner
+        confidence: oral

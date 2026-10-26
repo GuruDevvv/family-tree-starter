@@ -3,8 +3,26 @@ sex: F
 living: false
 names:
   - given: Анна
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
+    surname: Волкова
 events:
   - type: birth
     date: оценка 1932
-    claims: [{ source: src-owner, confidence: hypothesis, note: "со слов: «была чуть младше деда»" }]
+    claims:
+      - source: src-owner
+        confidence: hypothesis
+        note: 'со слов: «была чуть младше деда»'
+    place: g-tambov
+parents:
+  - person: volkov-grigoriy-1905
+    status: confirmed
+    claims:
+      - source: src-owner
+        confidence: oral
+  - person: volkova-mariya-1908
+    status: hypothesis
+    claims:
+      - source: src-owner
+        confidence: hypothesis

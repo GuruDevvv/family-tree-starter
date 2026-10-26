@@ -1,0 +1,22 @@
+id: testova-olga-1988
+sex: F
+living: true
+names:
+  - surname: Тестова
+    given: Ольга
+    patronymic: Сергеевна
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+parents:
+  - person: testov-sergey-1958
+    status: confirmed
+    claims: *ref_0
+  - person: testova-irina-1960
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1988'
+    place: g-moskva
+    claims: *ref_0

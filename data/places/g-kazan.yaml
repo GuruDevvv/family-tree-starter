@@ -1,0 +1,8 @@
+id: g-kazan
+name_then: г. Казань
+kind: city
+name_now: Казань
+coords:
+  lat: 55.7963
+  lon: 49.1088
+  precision: exact

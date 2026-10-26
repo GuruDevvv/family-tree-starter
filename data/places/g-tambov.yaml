@@ -1,0 +1,8 @@
+id: g-tambov
+name_then: г. Тамбов
+kind: city
+name_now: Тамбов
+coords:
+  lat: 52.7212
+  lon: 41.4523
+  precision: exact

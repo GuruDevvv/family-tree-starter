@@ -1,0 +1,22 @@
+id: testov-andrey-1962
+sex: M
+living: true
+names:
+  - surname: Тестов
+    given: Андрей
+    patronymic: Петрович
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+parents:
+  - person: testov-petr-1930
+    status: confirmed
+    claims: *ref_0
+  - person: testova-anna-1932
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1962'
+    place: g-ryazan
+    claims: *ref_0

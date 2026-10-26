@@ -1,0 +1,13 @@
+id: volkova-mariya-1908
+sex: F
+living: false
+names:
+  - given: Мария
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+events:
+  - type: birth
+    date: около 1908
+    place: s-znamenka
+    claims: *ref_0

@@ -1,8 +1,34 @@
 # Семейное древо с ИИ-помощником
 
+<img src=".github/cover.jpg" width="100%" alt="Family Tree. Your ancestors, every fact with a source.">
+
+<a href="https://github.com/GuruDevvv/family-tree-starter/generate"><img src="https://img.shields.io/badge/Use_this_template-FF4F1A?style=for-the-badge&logo=github&logoColor=white" alt="Use this template"></a>
+<a href="https://github.com/GuruDevvv/family-tree-starter/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/Download_ZIP-111111?style=for-the-badge&logo=github&logoColor=white" alt="Download ZIP"></a>
+<img src="https://img.shields.io/badge/Claude_Code-111111?style=for-the-badge" alt="Claude Code">
+<img src="https://img.shields.io/badge/Codex-111111?style=for-the-badge" alt="Codex">
+
 Заготовка, чтобы собрать свою родословную вместе с Claude Code или Codex. Это сайт с древом, карточками людей и картой мест, а к нему методика поиска по российским архивам. ИИ-помощник заносит то, что вы знаете, ищет в открытых источниках, готовит письма в архивы и ведёт журнал поиска. Вы приносите рассказы родных и документы, а в древо попадает только то, что вы подтвердили.
 
 *Starter kit for building your family tree with an AI coding agent (Claude Code or Codex). Russian-language docs, focused on Russian and ex-USSR archives.*
+
+## Как это выглядит
+
+Всё ниже — выдуманная семья из примера: 24 человека, 6 поколений.
+
+**Древо.** Прямые предки по номерам, род отца слева, род матери справа. Боковые ветки раскрываются кнопкой «+1», пунктир означает родство-гипотезу.
+
+<img src=".github/screenshots/tree.jpg" width="100%" alt="Древо: шесть поколений выдуманной семьи Тестовых">
+
+**Карта.** Где жили предки. Сплошная точка — место известно точно, пунктирная — примерно, например исчезнувшая деревня.
+
+<img src=".github/screenshots/map.jpg" width="100%" alt="Карта мест семьи">
+
+<table>
+<tr>
+<td width="50%"><b>Карточка человека.</b> Кем приходится, события жизни, у каждого факта источник и надёжность, открытые вопросы.<br><br><img src=".github/screenshots/card.jpg" width="100%" alt="Карточка человека"></td>
+<td width="50%"><b>Журнал поиска.</b> Где уже искали и с каким итогом, письма в архивы со статусом, сроком и ценой.<br><br><img src=".github/screenshots/log.jpg" width="100%" alt="Журнал поиска и письма в архивы"></td>
+</tr>
+</table>
 
 ## Что внутри
 
@@ -38,6 +64,12 @@ npm run build      # сборка в site/dist
 ## Стек
 
 YAML и JSON Schema (ajv) → Node-скрипт сборки → Vite + TypeScript без фреймворка, d3-zoom, Leaflet и OpenStreetMap, тесты на vitest.
+
+## Откуда это
+
+Заготовка выросла из моей собственной родословной. За первые недели помощник довёл одну линию по документам до 1820-х годов: метрические книги, исповедные ведомости, письма в архивы. Код, методику и уроки того поиска я вынул оттуда, а свои данные оставил дома.
+
+Код и большая часть текста написаны ИИ-агентами. Работу делает Claude Code, Codex проверяет и рисует картинки. Моя часть — задача, решения и приёмка результата.
 
 ## Лицензия
 

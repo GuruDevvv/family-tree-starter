@@ -1,0 +1,33 @@
+id: lebedev-fedor-1900
+sex: M
+living: false
+names:
+  - surname: Лебедев
+    given: Фёдор
+    patronymic: Иванович
+    claims: &ref_0
+      - source: src-interview-irina
+        confidence: oral
+spouses:
+  - person: lebedeva-olga-1903
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1900'
+    place: g-yaroslavl
+    claims: *ref_0
+  - type: move
+    date: '1926'
+    place: g-kazan
+    claims: *ref_0
+  - type: award
+    date: '1944'
+    title: Медаль «За боевые заслуги»
+    claims:
+      - source: src-pamyat-naroda-lebedev
+        confidence: document
+  - type: death
+    date: '1971'
+    place: g-kazan
+    claims: *ref_0

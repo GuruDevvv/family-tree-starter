@@ -1,0 +1,8 @@
+id: g-sverdlovsk
+name_then: г. Свердловск
+kind: city
+name_now: Екатеринбург
+coords:
+  lat: 56.8389
+  lon: 60.6057
+  precision: exact

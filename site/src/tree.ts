@@ -105,7 +105,8 @@ export function mountTree(viewport: HTMLElement, data: SiteData, selected: strin
     else vp.call(zoomer.transform, t);
   };
   const fitAll = () => {
-    const k = clampK(Math.min(viewport.clientWidth / L.width, (viewport.clientHeight - 60) / height));
+    // сверху 50 под строку с числом поколений, снизу 110 под панель кнопок
+    const k = clampK(Math.min(viewport.clientWidth / L.width, (viewport.clientHeight - 160) / height));
     return zoomIdentity.translate((viewport.clientWidth - L.width * k) / 2, 50).scale(k);
   };
   // начальный вид: прямые предки целиком, по высоте всё древо, но не мельче 0.62

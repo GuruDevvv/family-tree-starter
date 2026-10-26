@@ -1,0 +1,27 @@
+id: orlov-vasiliy-1898
+sex: M
+living: false
+names:
+  - surname: Орлов
+    given: Василий
+    patronymic: Егорович
+    claims: &ref_0
+      - source: src-interview-irina
+        confidence: oral
+spouses:
+  - person: orlova-tatyana-1902
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1898'
+    place: d-nikolskoe
+    claims: *ref_0
+  - type: move
+    date: '1925'
+    place: g-vologda
+    claims: *ref_0
+  - type: death
+    date: '1960'
+    place: g-vologda
+    claims: *ref_0

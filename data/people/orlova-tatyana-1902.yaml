@@ -1,0 +1,14 @@
+id: orlova-tatyana-1902
+sex: F
+living: false
+names:
+  - surname: Орлова
+    given: Татьяна
+    claims: &ref_0
+      - source: src-interview-irina
+        confidence: oral
+events:
+  - type: birth
+    date: около 1902
+    place: d-nikolskoe
+    claims: *ref_0

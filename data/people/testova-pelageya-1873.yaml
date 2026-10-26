@@ -1,0 +1,14 @@
+id: testova-pelageya-1873
+sex: F
+living: false
+names:
+  - given: Пелагея
+    patronymic: Андреевна
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+events:
+  - type: birth
+    date: около 1873
+    place: s-pokrovskoe
+    claims: *ref_0

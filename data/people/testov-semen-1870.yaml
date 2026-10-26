@@ -5,8 +5,25 @@ estate: крестьянин
 names:
   - surname: Тестов
     given: Семён
-    claims: [{ source: src-metric-1902, confidence: hypothesis }]
+    claims:
+      - source: src-metric-1902
+        confidence: hypothesis
 events:
   - type: birth
     date: около 1870
-    claims: [{ source: src-metric-1902, confidence: hypothesis, note: оценка по возрасту при браке }]
+    claims:
+      - source: src-metric-1902
+        confidence: hypothesis
+        note: оценка по возрасту при браке
+parents:
+  - person: testov-egor-1840
+    status: hypothesis
+    claims:
+      - source: src-owner
+        confidence: hypothesis
+spouses:
+  - person: testova-pelageya-1873
+    status: confirmed
+    claims:
+      - source: src-owner
+        confidence: oral

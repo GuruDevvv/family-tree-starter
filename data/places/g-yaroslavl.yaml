@@ -1,0 +1,8 @@
+id: g-yaroslavl
+name_then: г. Ярославль
+kind: city
+name_now: Ярославль
+coords:
+  lat: 57.6261
+  lon: 39.8845
+  precision: exact

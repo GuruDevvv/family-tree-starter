@@ -1,0 +1,22 @@
+id: lebedev-vladimir-1955
+sex: M
+living: true
+names:
+  - surname: Лебедев
+    given: Владимир
+    patronymic: Николаевич
+    claims: &ref_0
+      - source: src-interview-irina
+        confidence: oral
+parents:
+  - person: lebedev-nikolay-1929
+    status: confirmed
+    claims: *ref_0
+  - person: orlova-valentina-1932
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1955'
+    place: g-kazan
+    claims: *ref_0

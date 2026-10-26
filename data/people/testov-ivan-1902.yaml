@@ -3,38 +3,67 @@ sex: M
 living: false
 estate: крестьянин
 religion: православный
-portrait: ivan-portrait
 story: testov-ivan-1902
-tags: [папина-линия]
+tags:
+  - папина-линия
 names:
   - surname: Тестов
     given: Иван
     patronymic: Семёнович
-    claims: [{ source: src-metric-1902, confidence: document, detail: "л. 12 об., запись № 34" }]
+    claims:
+      - source: src-metric-1902
+        confidence: document
+        detail: л. 12 об., запись № 34
   - type: variant
     surname: Тестовъ
     given: Иоаннъ
-    claims: [{ source: src-metric-1902, confidence: document }]
+    claims:
+      - source: src-metric-1902
+        confidence: document
 parents:
   - person: testov-semen-1870
     status: hypothesis
-    claims: [{ source: src-metric-1902, confidence: hypothesis, note: отец «Симеон Тестов» без возраста — нужна ревизия }]
+    claims:
+      - source: src-metric-1902
+        confidence: hypothesis
+        note: отец «Симеон Тестов» без возраста — нужна ревизия
 events:
   - type: birth
-    date: 1902-01-10
+    date: '1902-01-10'
     calendar: julian
     place: s-pokrovskoe
-    claims: [{ source: src-metric-1902, confidence: document, detail: "л. 12 об., запись № 34" }]
+    claims:
+      - source: src-metric-1902
+        confidence: document
+        detail: л. 12 об., запись № 34
   - type: baptism
-    date: 1902-01-12
+    date: '1902-01-12'
     calendar: julian
     place: s-pokrovskoe
     participants:
-      - { person: testov-matvey-1880, role: godparent }
-      - { name: крестьянка Марфа Ильина, role: godparent }
-      - { name: священник Иоанн Покровский, role: priest }
-    claims: [{ source: src-metric-1902, confidence: document }]
+      - person: testov-matvey-1880
+        role: godparent
+      - name: крестьянка Марфа Ильина
+        role: godparent
+      - name: священник Иоанн Покровский
+        role: priest
+    claims:
+      - source: src-metric-1902
+        confidence: document
   - type: occupation
     title: Колхозник
     date: после 1930
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
+  - type: military
+    date: '1941'
+    place: g-moskva
+    title: Призван в армию, оборона Москвы
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+  - type: death
+    date: '1968'
+    place: g-ryazan
+    claims: *ref_0

@@ -1,0 +1,15 @@
+id: volkov-stepan-1875
+sex: M
+living: false
+estate: крестьянин
+names:
+  - surname: Волков
+    given: Степан
+    claims: &ref_0
+      - source: src-owner
+        confidence: hypothesis
+events:
+  - type: birth
+    date: около 1875
+    place: s-znamenka
+    claims: *ref_0

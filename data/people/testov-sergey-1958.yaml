@@ -5,24 +5,43 @@ names:
   - surname: Тестов
     given: Сергей
     patronymic: Петрович
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 parents:
   - person: testov-petr-1930
     status: confirmed
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
   - person: testova-anna-1932
     status: confirmed
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 spouses:
   - person: testova-irina-1960
     status: confirmed
-    claims: [{ source: src-owner, confidence: oral }]
+    claims:
+      - source: src-owner
+        confidence: oral
 events:
-  - type: birth
-    date: 1958
-    place: g-ryazan
-    claims: [{ source: src-owner, confidence: oral }]
   - type: marriage
     date: 1983
-    participants: [{ person: testova-irina-1960, role: spouse }]
-    claims: [{ source: src-owner, confidence: oral }]
+    participants:
+      - person: testova-irina-1960
+        role: spouse
+    claims:
+      - source: src-owner
+        confidence: oral
+  - type: birth
+    date: '1958'
+    place: g-ryazan
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+  - type: education
+    date: '1975'
+    place: g-moskva
+    title: Учёба в институте
+    claims: *ref_0

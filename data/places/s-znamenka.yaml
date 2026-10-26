@@ -1,0 +1,12 @@
+id: s-znamenka
+name_then: с. Знаменка
+kind: village
+hierarchy:
+  governorate: Тамбовская губерния
+  uyezd: Тамбовский уезд
+name_now: с. Знаменка, Тамбовская область
+coords:
+  lat: 52.25
+  lon: 44.3
+  precision: approx
+  how: по карте Шуберта 1860-х

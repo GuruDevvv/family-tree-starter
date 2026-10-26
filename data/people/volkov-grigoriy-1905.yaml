@@ -1,0 +1,33 @@
+id: volkov-grigoriy-1905
+sex: M
+living: false
+names:
+  - surname: Волков
+    given: Григорий
+    patronymic: Степанович
+    claims: &ref_0
+      - source: src-owner
+        confidence: oral
+parents:
+  - person: volkov-stepan-1875
+    status: hypothesis
+    claims:
+      - source: src-owner
+        confidence: hypothesis
+spouses:
+  - person: volkova-mariya-1908
+    status: confirmed
+    claims: *ref_0
+events:
+  - type: birth
+    date: '1905'
+    place: s-znamenka
+    claims: *ref_0
+  - type: move
+    date: '1930'
+    place: g-tambov
+    claims: *ref_0
+  - type: death
+    date: '1943'
+    title: Погиб на фронте
+    claims: *ref_0

@@ -1,0 +1,8 @@
+id: g-vologda
+name_then: г. Вологда
+kind: city
+name_now: Вологда
+coords:
+  lat: 59.2205
+  lon: 39.8915
+  precision: exact
