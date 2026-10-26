@@ -1,0 +1,6 @@
+id: g-ryazan
+name_then: г. Рязань
+kind: city
+name_now: Рязань
+coords: { lat: 54.6269, lon: 39.6916, precision: exact }
+archive: garo

@@ -1,0 +1,23 @@
+{
+  "$id": "archive",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "defs#/definitions/id" },
+      "name": { "type": "string" },
+      "short": { "type": "string" },
+      "region": { "type": "string" },
+      "holds": { "type": "string" },
+      "address": { "type": "string" },
+      "email": { "type": "string" },
+      "url": { "type": "string" },
+      "how_to_request": { "type": "string" },
+      "price": { "type": "string" },
+      "term": { "type": "string" },
+      "note": { "type": "string" }
+    }
+  }
+}

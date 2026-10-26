@@ -1,0 +1,5 @@
+- id: ivan-portrait
+  file: ivan-portrait.jpg
+  kind: portrait
+  persons: [testov-ivan-1902]
+  caption: Иван Семёнович, около 1950

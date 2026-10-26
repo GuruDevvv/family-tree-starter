@@ -1,0 +1,12 @@
+data/media/
+node_modules/
+site/dist/
+site/public/data.json
+prototypes/_check/
+prototypes/mockups/_logs/
+data/private/
+site/public/media/
+site/public/private/
+promo/node_modules/
+promo/public/
+promo/out/

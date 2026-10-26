@@ -1,0 +1,19 @@
+id: lebedev-nikolay-1929
+sex: M
+living: false
+names:
+  - surname: Лебедев
+    given: Николай
+    claims: [{ source: src-interview-irina, confidence: oral }]
+events:
+  - type: birth
+    date: между 1928 и 1930
+    claims: [{ source: src-interview-irina, confidence: oral }]
+  - type: military
+    title: Служба в армии
+    date: 1949
+    claims: [{ source: src-interview-irina, confidence: oral }]
+  - type: death
+    date: 1995
+    place: g-ryazan
+    claims: [{ source: src-interview-irina, confidence: oral }]

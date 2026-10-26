@@ -1,0 +1,8 @@
+id: testov-matvey-1880
+sex: M
+living: false
+names:
+  - surname: Тестов
+    given: Матвей
+    claims: [{ source: src-metric-1902, confidence: document }]
+note: Крёстный Ивана, вероятно брат Семёна — проверить по ревизии.

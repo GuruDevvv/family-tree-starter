@@ -1,0 +1,83 @@
+{
+  "$id": "person",
+  "type": "object",
+  "required": ["id", "sex", "names"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "defs#/definitions/id" },
+    "sex": { "enum": ["M", "F", "U"] },
+    "living": { "type": "boolean" },
+    "names": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["claims"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "enum": ["birth", "married", "changed", "baptismal", "variant", "nickname"] },
+          "surname": { "type": "string" },
+          "given": { "type": "string" },
+          "patronymic": { "type": "string" },
+          "claims": { "$ref": "defs#/definitions/claims" }
+        },
+        "anyOf": [{ "required": ["surname"] }, { "required": ["given"] }]
+      }
+    },
+    "estate": { "type": "string" },
+    "religion": { "type": "string" },
+    "ethnicity": { "type": "string" },
+    "portrait": { "$ref": "defs#/definitions/id" },
+    "story": { "$ref": "defs#/definitions/id" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "note": { "type": "string" },
+    "parents": { "type": "array", "items": { "$ref": "#/definitions/link" } },
+    "spouses": { "type": "array", "items": { "$ref": "#/definitions/link" } },
+    "events": { "type": "array", "items": { "$ref": "#/definitions/event" } }
+  },
+  "definitions": {
+    "link": {
+      "type": "object",
+      "required": ["person", "status", "claims"],
+      "additionalProperties": false,
+      "properties": {
+        "person": { "$ref": "defs#/definitions/id" },
+        "status": { "enum": ["confirmed", "hypothesis", "disputed"] },
+        "claims": { "$ref": "defs#/definitions/claims" },
+        "note": { "type": "string" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["type", "claims"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": ["birth", "baptism", "marriage", "divorce", "death", "burial", "residence", "move", "revision", "census", "military", "award", "education", "occupation", "estate", "repression", "rehabilitation", "other"]
+        },
+        "title": { "type": "string" },
+        "date": { "$ref": "defs#/definitions/date" },
+        "calendar": { "enum": ["julian", "gregorian"] },
+        "place": { "$ref": "defs#/definitions/id" },
+        "participants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["role"],
+            "additionalProperties": false,
+            "properties": {
+              "person": { "$ref": "defs#/definitions/id" },
+              "name": { "type": "string" },
+              "role": { "enum": ["spouse", "godparent", "witness", "informant", "priest", "parent", "other"] },
+              "note": { "type": "string" }
+            },
+            "anyOf": [{ "required": ["person"] }, { "required": ["name"] }]
+          }
+        },
+        "media": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+        "claims": { "$ref": "defs#/definitions/claims" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

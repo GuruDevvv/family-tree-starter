@@ -1,0 +1,10 @@
+id: testova-anna-1932
+sex: F
+living: false
+names:
+  - given: Анна
+    claims: [{ source: src-owner, confidence: oral }]
+events:
+  - type: birth
+    date: оценка 1932
+    claims: [{ source: src-owner, confidence: hypothesis, note: "со слов: «была чуть младше деда»" }]

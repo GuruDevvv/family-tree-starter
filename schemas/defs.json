@@ -1,0 +1,20 @@
+{
+  "$id": "defs",
+  "definitions": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "date": { "anyOf": [{ "type": "string", "minLength": 4 }, { "type": "integer", "minimum": 1000, "maximum": 2100 }] },
+    "claim": {
+      "type": "object",
+      "required": ["source", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "$ref": "defs#/definitions/id" },
+        "detail": { "type": "string" },
+        "confidence": { "enum": ["document", "oral", "hypothesis", "conflict"] },
+        "accepted": { "$ref": "defs#/definitions/date" },
+        "note": { "type": "string" }
+      }
+    },
+    "claims": { "type": "array", "minItems": 1, "items": { "$ref": "defs#/definitions/claim" } }
+  }
+}

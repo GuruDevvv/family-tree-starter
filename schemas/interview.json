@@ -1,0 +1,23 @@
+{
+  "$id": "interview",
+  "type": "object",
+  "required": ["id", "who", "date"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "defs#/definitions/id" },
+    "who": { "$ref": "defs#/definitions/id" },
+    "date": { "$ref": "defs#/definitions/date" },
+    "source": { "$ref": "defs#/definitions/id" },
+    "qa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["q"],
+        "additionalProperties": false,
+        "properties": { "q": { "type": "string" }, "a": { "type": "string" } }
+      }
+    },
+    "media": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+    "note": { "type": "string" }
+  }
+}

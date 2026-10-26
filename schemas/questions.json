@@ -1,0 +1,16 @@
+{
+  "$id": "questions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["ask", "about", "text", "status"],
+    "additionalProperties": false,
+    "properties": {
+      "ask": { "enum": ["papa", "mama", "search", "other"] },
+      "about": { "type": "array", "minItems": 1, "items": { "$ref": "defs#/definitions/id" } },
+      "text": { "type": "string" },
+      "status": { "enum": ["open", "answered"] },
+      "answer": { "type": "string" }
+    }
+  }
+}

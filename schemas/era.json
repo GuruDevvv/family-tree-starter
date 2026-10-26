@@ -1,0 +1,16 @@
+{
+  "$id": "era",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["date", "title"],
+    "additionalProperties": false,
+    "properties": {
+      "date": { "$ref": "defs#/definitions/date" },
+      "title": { "type": "string" },
+      "region": { "type": "string" },
+      "about": { "type": "string" },
+      "affects": { "type": "array", "items": { "type": "string" } }
+    }
+  }
+}

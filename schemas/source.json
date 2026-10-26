@@ -1,0 +1,25 @@
+{
+  "$id": "source",
+  "type": "object",
+  "required": ["id", "kind", "title", "reliability"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "defs#/definitions/id" },
+    "kind": {
+      "enum": ["metric-book", "revision-tale", "confession-list", "census", "zags", "military-db", "repression-db", "archive-file", "home-document", "interview", "publication", "website", "other"]
+    },
+    "title": { "type": "string" },
+    "archive": { "$ref": "defs#/definitions/id" },
+    "fond": { "type": "string" },
+    "opis": { "type": "string" },
+    "delo": { "type": "string" },
+    "list": { "type": "string" },
+    "url": { "type": "string" },
+    "informant": { "$ref": "defs#/definitions/id" },
+    "date": { "$ref": "defs#/definitions/date" },
+    "media": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+    "reliability": { "enum": ["original", "derivative", "authored", "oral"] },
+    "record_group": { "$ref": "defs#/definitions/id" },
+    "note": { "type": "string" }
+  }
+}

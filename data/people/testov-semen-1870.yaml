@@ -1,0 +1,12 @@
+id: testov-semen-1870
+sex: M
+living: false
+estate: крестьянин
+names:
+  - surname: Тестов
+    given: Семён
+    claims: [{ source: src-metric-1902, confidence: hypothesis }]
+events:
+  - type: birth
+    date: около 1870
+    claims: [{ source: src-metric-1902, confidence: hypothesis, note: оценка по возрасту при браке }]

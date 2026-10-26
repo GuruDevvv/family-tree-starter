@@ -1,0 +1,11 @@
+id: s-pokrovskoe
+name_then: с. Покровское
+kind: village
+hierarchy:
+  governorate: Рязанская губерния
+  uyezd: Тестовский уезд
+  volost: Покровская волость
+  parish: Покровская церковь
+name_now: не существует (урочище)
+coords: { lat: 54.3, lon: 40.1, precision: approx, how: по карте Менде 1850-х }
+archive: garo

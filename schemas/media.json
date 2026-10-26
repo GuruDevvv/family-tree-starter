@@ -1,0 +1,19 @@
+{
+  "$id": "media",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "file", "kind"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "defs#/definitions/id" },
+      "file": { "type": "string" },
+      "kind": { "enum": ["photo", "portrait", "scan", "audio", "video", "other"] },
+      "persons": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+      "source": { "$ref": "defs#/definitions/id" },
+      "caption": { "type": "string" },
+      "private": { "type": "boolean", "description": "Личный документ: файл в data/private/, только на сайте у владельца, при выкладке (--public) выпадает" },
+      "date": { "$ref": "defs#/definitions/date" }
+    }
+  }
+}

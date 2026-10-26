@@ -1,0 +1,32 @@
+{
+  "name": "family-tree",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "test": "vitest run",
+    "build:data": "node scripts/build.js",
+    "dev": "vite site",
+    "build": "npm run build:data && vite build site",
+    "build:public": "node scripts/build.js --public && vite build site --emptyOutDir",
+    "check": "tsc -p site",
+    "open": "npm run build && vite preview site --open"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "d3-selection": "^3.0.0",
+    "d3-transition": "^3.0.1",
+    "d3-zoom": "^3.0.0",
+    "js-yaml": "^5.5.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@types/d3-selection": "^3.0.12",
+    "@types/d3-transition": "^3.0.9",
+    "@types/d3-zoom": "^3.0.9",
+    "@types/leaflet": "^1.9.22",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

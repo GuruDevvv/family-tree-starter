@@ -1,0 +1,20 @@
+{
+  "$id": "request",
+  "type": "object",
+  "required": ["id", "to", "what", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "defs#/definitions/id" },
+    "to": { "$ref": "defs#/definitions/id" },
+    "about": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+    "what": { "type": "string" },
+    "letter": { "type": "string" },
+    "status": { "enum": ["draft", "sent", "paid", "answered", "refused", "cancelled"] },
+    "sent": { "$ref": "defs#/definitions/date" },
+    "due": { "$ref": "defs#/definitions/date" },
+    "cost": { "type": "number", "minimum": 0 },
+    "answer": { "type": "string" },
+    "sources": { "type": "array", "items": { "$ref": "defs#/definitions/id" } },
+    "note": { "type": "string" }
+  }
+}

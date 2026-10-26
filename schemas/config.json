@@ -1,0 +1,10 @@
+{
+  "$id": "config",
+  "type": "object",
+  "required": ["root"],
+  "additionalProperties": false,
+  "properties": {
+    "root": { "$ref": "defs#/definitions/id" },
+    "title": { "type": "string" }
+  }
+}

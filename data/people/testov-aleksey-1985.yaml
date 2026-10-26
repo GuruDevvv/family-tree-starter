@@ -1,0 +1,21 @@
+id: testov-aleksey-1985
+sex: M
+living: true
+names:
+  - type: birth
+    surname: Тестов
+    given: Алексей
+    patronymic: Сергеевич
+    claims: [{ source: src-owner, confidence: oral }]
+parents:
+  - person: testov-sergey-1958
+    status: confirmed
+    claims: [{ source: src-owner, confidence: oral }]
+  - person: testova-irina-1960
+    status: confirmed
+    claims: [{ source: src-owner, confidence: oral }]
+events:
+  - type: birth
+    date: 1985-06-12
+    place: g-ryazan
+    claims: [{ source: src-owner, confidence: oral }]
