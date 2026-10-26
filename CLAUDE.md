@@ -8,7 +8,7 @@
 
 1. Если `data/config.yaml` всё ещё указывает на тестовую семью (`root: testov-aleksey-1985`) или файла `docs/vision.md` нет — это **первая сессия**. Иди строго по `docs/onboarding.md`.
 2. Иначе прочитай `HANDOFF.md` и продолжай с «Следующего шага». Перед новой задачей сверься с `docs/blueprint.md` и отмечай [x] выполненное.
-3. Порядок поиска, маршруты по эпохам, сословиям и вере — `method/method.md`. Чему научились на прототипе — `docs/lessons.md`. Обзор источников и архивов России — `docs/research/genealogy-russia.md`.
+3. Порядок поиска, маршруты по эпохам, сословиям и вере — `method/method.md`. Чему научились на прототипе — `docs/lessons.md`. Обзор источников и архивов России — `docs/research/genealogy-russia.md`; другие страны бывшей империи, еврейские линии, эмиграция, ДНК — `docs/research/sources-beyond-russia.md`.
 
 ## Стек
 
