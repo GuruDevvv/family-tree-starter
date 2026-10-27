@@ -9,6 +9,12 @@ describe('parseDate', () => {
     expect(parseDate('03.1902').min).toBeCloseTo(parseDate('1902-03').min);
   });
 
+  it('31 декабря остаётся в своём году', () => {
+    const r = parseDate('1923-12-31');
+    expect(r.max).toBeLessThan(1924);
+    expect(Math.floor(midYear(r))).toBe(1923);
+  });
+
   it('около и оценка расширяют диапазон', () => {
     const r = parseDate('около 1850');
     expect(r.qualifier).toBe('about');

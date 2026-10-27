@@ -27,7 +27,8 @@ function month(y, mo) {
 function day(y, mo, d) {
   if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
   const v = y + (mo - 1) / 12 + (d - 1) / 365;
-  return { min: v, max: v + 1 / 365 - 1e-9 };
+  // 31 декабря: v + 1/365 перескакивает в следующий год, и середина диапазона давала год на 1 больше
+  return { min: v, max: Math.min(v + 1 / 365, y + 1) - 1e-9 };
 }
 
 export function parseDate(input) {

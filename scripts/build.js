@@ -32,7 +32,8 @@ const research = fs.existsSync(researchDir)
 for (const id of Object.keys(research)) if (!data.people.some((x) => x.record?.id === id)) console.log(`⚠️  stories/research/${id}.md — нет человека с таким id`);
 const site = buildSiteData(data, { stories, research, publicBuild });
 // Раскладку древа считаем здесь, один раз: подбор порядка по картинке занимает секунды — браузер их не ждёт.
-const L = layoutTree(site.people, site.meta.root);
+// Без бюджета подбор на семье в сотни человек не заканчивается вовсе.
+const L = layoutTree(site.people, site.meta.root, { budgetMs: 10000 });
 site.layout = { ...L, nodes: [...L.nodes.values()] };
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
